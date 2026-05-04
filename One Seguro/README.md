@@ -26,8 +26,9 @@ Customers can report an insurance claim through:
 ### 2. Schedule a Service
 
 Customers can schedule services such as:
-- Vehicle inspection
-- Repair appointments
+- Locksmith
+- Electrician
+- General home services.
 
 **Key capabilities:**
 - Date and time selection
@@ -49,7 +50,7 @@ Customers can schedule services such as:
 1. Import the package (see main README)
 2. Assign the flow to an existing AI Agent
 3. Start the conversation using:
-   - Voice
+   - Voice (PWA)
    - Chat interface
 
 ---
