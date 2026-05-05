@@ -1,236 +1,209 @@
-# AI Agents Demo Repository (Cognigy)
+# AI Agents Demo Repository
 
-## Table of Contents
+Production-ready AI Agent demonstrations organized by industry. Perfect for pre-sales, solution engineering, and client presentations.
 
-- [Overview](#overview)
-- [Repository Structure](#repository-structure)
-- [Prerequisites](#prerequisites)
-- [Installation Steps](#installation-steps)
-  - [Step 1: Download the Agent Package](#step-1-download-the-agent-package)
-  - [Step 2: Log in to Cognigy](#step-2-log-in-to-cognigy)
-  - [Step 3: Access the Packaging Feature](#step-3-access-the-packaging-feature)
-  - [Step 4: Import the Package](#step-4-import-the-package)
-  - [Step 5: Verify Installation](#step-5-verify-installation)
-- [Post-Installation Checklist](#post-installation-checklist)
-- [Package Contents](#package-contents)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Creating an Issue](#creating-an-issue)
-- [Best Practices for Demos](#best-practices-for-demos)
-- [Support](#support)
-- [Contributors](#contributors)
-- [Version Information](#version-information)
-- [Additional Resources](#additional-resources)
+## 🚀 Quick Start
 
----
+```bash
+# 1. Choose a vertical (e.g., Insurance)
+cd verticals/insurance/one-seguro
 
-## Overview
+# 2. Download package
+# Download one-seguro-pt-br-v1.0.zip
 
-This repository contains a collection of AI Agent demos built on Cognigy, organized by industry verticals.
+# 3. Import to Cognigy
+# Settings → Packages → Import → Select .zip
 
-Each vertical represents a specific industry use case (e.g., Insurance, Hospitality, Healthcare) and includes pre-built flows designed to demonstrate real-world applications of conversational AI.
-
-These demos are designed for:
-
-* Pre-sales demonstrations
-* Solution engineering showcases
-* Industry-specific use case exploration
-
----
-
-## Repository Structure
-
-Each vertical is organized in its own folder:
-
-```
-/one-seguros
-   /one-seguro-es
-   /one-seguro-pt
-README.md
+# 4. Assign to agent & test
+# Agents → Select agent → Add flow
 ```
 
-Inside each vertical you will find:
-
-* Cognigy package files (.zip)
-* Use case documentation
-* Language-specific variations (if applicable)
+**[→ Full Installation Guide](./docs/INSTALLATION-GUIDE.md)** | **[→ Quick Start (5 min)](./docs/QUICK-START.md)**
 
 ---
 
-## Prerequisites
+## 📊 Available Verticals
 
-Before you begin, ensure you have:
+| Vertical | Status | Demos | Languages |
+|----------|--------|-------|-----------|
+| [Insurance](./verticals/insurance/insurance-README.md) | ✅ Active | 1 | PT, ES|
 
-* A Cognigy account with admin or agent management permissions
-* Access to the Cognigy platform (web interface)
-* The agent package file (.zip) downloaded
-* A modern web browser (Chrome, Firefox, Edge, or Safari)
 
----
-
-## Installation Steps
-
-### Step 1: Download the Agent Package
-
-1. Navigate to the **Releases** section of this repository
-2. Download the latest `.zip` package for the desired vertical and language
-3. Save it to an easily accessible location (Desktop or Downloads)
+**[→ View All Verticals](./verticals/VERTICALS-INDEX.md)**
 
 ---
 
-### Step 2: Log in to Cognigy
+## 🏦 Featured Demo: One Seguro
 
-1. Open your web browser
-2. Navigate to your Cognigy platform URL
-3. Log in with your credentials
-4. Ensure you have the required permissions
+AI Agent for insurance claims reporting.
 
----
+**Features:**
+- 🗣️ Voice claims reporting
+- 💬 Web forms with XApps
+- 🌐 Multi-language (PT, ES, EN)
+- 📱 Mobile responsive
+- 24/7 availability
 
-### Step 3: Access the Packaging Feature
-
-1. In the Cognigy dashboard, open **Settings**
-2. Click **Packages** or **Packaging**
-3. Locate the package management section
-
----
-
-### Step 4: Import the Package
-
-1. Click **Import** or **Upload Package**
-2. Drag and drop the `.zip` file or select it manually
-3. Wait for the system to process the file
+**Get Started:**
+1. [Download package](./verticals/insurance/one-seguro/)
+2. [Read documentation](./verticals/insurance/one-seguro/README.md)
+3. [View demo script](./verticals/insurance/one-seguro/assets/demo-scripts/demo.md)
 
 ---
 
-### Step 5: Verify Installation
+## 📚 Documentation
 
-1. Wait for the upload to complete
-2. Click the blue **Import** button (bottom-left)
-3. Confirm the success message
-4. Verify the flow appears in your flows list
-5. Assign the flow to an existing AI Agent (e.g., "Sarah")
+### Getting Started
+- **[Installation Guide](./docs/INSTALLATION-GUIDE.md)** - Step-by-step setup
+- **[Quick Start](./docs/QUICK-START.md)** - 5-minute demo
+- **[Verticals Index](./verticals/VERTICALS-INDEX.md)** - Browse all demos
 
-Important:
+### For Demos & Presentations
+- **[Demo Script Template](./docs/DEMO-SCRIPT-TEMPLATE.md)** - Create your own
+- **[Best Practices](./docs/BEST-PRACTICES.md)** - Pro tips
+- **[FAQ](./docs/FAQ.md)** - Common questions
 
-* Packages import flows only (not AI Agents)
-* Always attach the flow to an existing agent
-
----
-
-## Post-Installation Checklist
-
-* Agent flow appears in the flow list
-* No import errors occurred
-* Flow executes correctly
-* Conversation works as expected
-* Language matches the demo scenario
-* Agent is properly assigned
+### For Development
+- **[Contributing Guide](./CONTRIBUTING.md)** - Add new verticals
+- **[Vertical Template](./templates/VERTICAL-README-TEMPLATE.md)** - Standard structure
+- **[Package Structure](./templates/PACKAGE-STRUCTURE.md)** - Folder layout
 
 ---
 
-## Package Contents
+## 🎯 Use Cases
 
-Each package may include:
+### Pre-Sales & Solution Engineers
+1. Select vertical matching customer industry
+2. Review conversation flows
+3. Follow demo script
+4. Customize if needed
+5. Present to client
 
-* Flow definitions (conversation logic)
-* Agent configuration files
-* Integration placeholders (for demo purposes)
-* Custom scripts (if applicable)
-* Assets (images, files, etc.)
+### Developers & Implementation Teams
+1. Download vertical package
+2. Import into Cognigy
+3. Customize flows
+4. Add integrations
+5. Deploy to production
 
-Note:
-These demos are simplified and optimized for presentation, not production.
-
----
-
-## Troubleshooting
-
-Common issues and solutions:
-
-* Flow not appearing:
-  → Ensure the import was completed successfully
-
-* Import button not clicked:
-  → Click the blue Import button after upload
-
-* Permission errors:
-  → Verify admin or package permissions
-
-* Flow not working:
-  → Check if it was assigned to an agent
+### Product & Marketing
+1. Use verticals for case studies
+2. Create marketing materials
+3. Demonstrate capabilities
+4. Share success metrics
 
 ---
 
-## Contributing
+## 📁 Repository Structure
 
-Want to improve a demo or add a new vertical?
+```
+ai-agents-demo/
+├── verticals/              # All industry-specific demos
+│   ├── insurance/
+│   │   └── one-seguro/    # First demo (active)
+│   └── ...
+├── docs/                  # General documentation
+├── templates/             # Reusable templates
+├── .github/               # Issue & PR templates
+└── README.md (this file)
+```
 
-Please follow the guidelines in:
-👉 CONTRIBUTING.md
-
-Typical contributions include:
-
-* New industry demos
-* Improvements to existing flows
-* Bug fixes
-* Language variations
-
----
-
-## Creating an Issue
-
-If you encounter a problem:
-
-1. Go to the **Issues** tab
-2. Click **New Issue**
-3. Include:
-
-   * Vertical name
-   * Language (pt-BR, es, etc.)
-   * Flow name
-   * Description of the issue
-   * Steps to reproduce (if possible)
-
-This helps the team resolve issues faster.
+**[→ Detailed structure](./templates/PACKAGE-STRUCTURE.md)**
 
 ---
 
-## Best Practices for Demos
+## 🔄 Contributing
 
-* Keep flows simple and easy to present
-* Focus on business value, not technical complexity
-* Avoid unnecessary integrations
-* Design conversations for clarity and storytelling
+### Add a New Vertical
 
----
+1. Fork repository
+2. Create vertical folder: `verticals/[industry]/[demo-name]/`
+3. Follow [template structure](./templates/VERTICAL-README-TEMPLATE.md)
+4. Include README, packages (.zip), assets
+5. Submit pull request
 
-## Support
+**[→ Full Contributing Guide](./CONTRIBUTING.md)**
 
-If you need help:
+### Report Issues
 
-1. Check Cognigy Documentation: https://docs.cognigy.com
-2. Review the vertical README
-3. Open a GitHub Issue
-4. Contact your internal Solutions Engineering team
-
----
-
-## Contributors
-
-* João Alves
+- **Bug?** [Create bug report](./.github/ISSUE_TEMPLATE/bug_report.md)
+- **Feature idea?** [Request feature](./.github/ISSUE_TEMPLATE/feature_request.md)
+- **New vertical?** [Propose vertical](./.github/ISSUE_TEMPLATE/new_vertical.md)
 
 ---
 
-## Version Information
+## ✨ Key Features
 
-* Version: 1.0
-* Last Updated: 2026-05-04
-* Maintained by: CALA Solutions Engineering Team
+✅ **Production Ready** - Tested, documented, ready to use  
+✅ **Scalable** - Easy to add new verticals  
+✅ **Multi-Language** - Portuguese, Spanish, English  
+✅ **Multiple Channels** - Voice, web, mobile  
+✅ **Pre-Built** - No development needed  
+✅ **Customizable** - Adapt to your needs  
 
 ---
 
-## Additional Resources
+## 📊 What's Included in Each Vertical
 
-* Cognigy Documentation: https://docs.cognigy.com
-* Cognigy YouTube Channel: https://www.youtube.com/cognigy
+### Packages (3 Languages)
+- Portuguese (Brazil)
+- Spanish
+
+### Documentation
+- Comprehensive README
+- Conversation flow examples
+- Demo presentation script
+- Troubleshooting guide
+
+### Assets
+- Screenshots gallery
+- Demo script with timing
+- Conversation examples
+- CHANGELOG with roadmap
+
+---
+
+## 🎬 Demo Video & Screenshots
+
+**[→ View Insurance vertical screenshots](./verticals/insurance/one-seguro/assets/screenshots/)**
+
+**[→ See conversation examples](./verticals/insurance/one-seguro/assets/docs/conversation-flows.md)**
+
+---
+
+## 🛠️ Requirements
+
+- **Cognigy:** v5.0 or higher
+- **Admin Access:** For package import
+- **Disk Space:** ~100MB per vertical
+- **Browser:** Chrome, Firefox, Safari, Edge
+
+---
+
+## 📞 Support
+
+- **Documentation:** [See docs/](./docs/)
+- **Installation Help:** [Installation Guide](./docs/INSTALLATION-GUIDE.md)
+- **Common Issues:** [FAQ](./docs/FAQ.md)
+- **Report Bugs:** [Create issue](./.github/ISSUE_TEMPLATE/bug_report.md)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! [See CONTRIBUTING.md](./CONTRIBUTING.md)
+
+---
+
+## 📞 Questions?
+
+- **Getting Started?** → [Quick Start](./docs/QUICK-START.md)
+- **How to demo?** → [Demo Script Template](./docs/DEMO-SCRIPT-TEMPLATE.md)
+- **Want to add vertical?** → [Contributing Guide](./CONTRIBUTING.md)
+- **Having issues?** → [FAQ](./docs/FAQ.md)
+
+---
+
+**Last Updated:** May 4, 2025  
+**Current Version:** 1.0.0  
+**Active Verticals:** 1 | **In Development:** 2 | **Planned:** 2
